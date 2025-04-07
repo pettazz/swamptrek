@@ -1,0 +1,24 @@
+---
+sitemap: false
+---
+
+h1{
+  a{
+    text-decoration: none;
+  }
+}
+
+.lcars-frame.blued{
+  .line {
+    background: linear-gradient(#0000aa, #ffffaa, #0000aa);
+  }
+}
+
+.lcars-frame.widen{
+  .frame-col-3{
+    width: 80%
+  }
+  .line {
+    width: 6%;
+  }
+}

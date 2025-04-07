@@ -1,0 +1,19 @@
+---
+title: "Prelude"
+categories: mission
+stardate: 48315.6
+date: 2025-04-06 14:30:00
+---
+
+At Starfleet Headquartes in San Francisco, Earth, eight new captains were summoned to receive their new commissions, one of whom was Captain Yeldrin Ral. He encountered another captain, Zinet, who he did not recognize from the academy and rambled on nervously about ship classes and not being able to access the report on the USS Merrimack. Admiral Dougherty arrived to provide the captains with their postings and crew assignments, all to Excelsior class ships which he called "the backbone of the fleet."
+
+Captain Ral is given command of the USS Hanesawa, on its eighth refit and with a crew of 400. Senior staff are:
+
+- Chief Engineer/Operations Manager: Lt. Ania Hagen
+- Chief of Security/Chief Tactical Officer: Lt. Jave Cohnson
+- Science Officer/Ship's Doctor: Lt. Ma'a'yan
+{: .lcars-list}
+
+Upon arriving at his new ship in spacedock, Captain Ral discovered it powered up ahead of schedule. In Main Engineering he found Lt. Hagen initializing the warp reactor. In the Holodeck he was caught off guard by Lt. Cohnson performing a tactical training routine. In sickbay he found Lt. Ma'a'yan calibrating the bioscanner systems. After a week of preparations, the full crew is aboard and the bridge crew take their stations, launching from spacedock to their first mission.
+
+<div style="padding:43.02% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/343262515?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media" style="position:absolute;top:0;left:0;width:100%;height:100%;" title="Excelsior Flyby"></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>

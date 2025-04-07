@@ -1,0 +1,63 @@
+title: USS Hanesawa 
+email: swamptrek@n.pettazz.com
+description: >- 
+  Write an awesome description for your new site here. You can edit this
+  line in _config.yml. It will appear in your document head meta (for
+  Google search results) and in your feed.xml site description.
+locale: en_US
+baseurl: ""
+url: "https://swamptrek.xyz"
+
+permalink: /:categories/:slug/
+
+markdown: kramdown
+safe: false
+
+defaults:
+  -
+    scope:
+      path: "" # an empty string here means all files in the project
+    values:
+      layout: "default"
+
+plugins:
+  - jekyll-sitemap
+
+# pagination:
+#   enabled: true
+#   title: ':title - page :num'
+#   per_page: 20
+#   sort_reverse: true
+#   trail:
+#     before: 2
+#     after: 2
+
+# autopages:
+#   enabled: true
+#   collections:
+#     enabled: false
+#   tags:
+#     enabled: false
+#   categories:
+#     layouts:
+#       - 'autopage_category.html'
+#     permalink: '/:cat/'
+
+exclude:
+  - LICENSE
+  - README.md
+  - .dockerignore
+  - .gitignore
+  - .sass-cache/
+  - .jekyll-cache/
+  - Dockerfile
+  - fly.toml
+  - gemfiles/
+  - Gemfile
+  - Gemfile.lock
+  - nginx.conf
+  - node_modules/
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/

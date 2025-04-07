@@ -1,0 +1,15 @@
+---
+title: "Crisis on Cressida"
+categories: mission
+stardate: 48398.9
+date: 2025-04-06 15:30:00
+---
+
+{% capture captains_log_body %}
+  Stardate 48398.9: We have received an urgent distress call from the independent floating city of Cressida, a resource-gathering collective on the gaseous world Kizomic VI. Creatures of unknown origin have attacked, causing casualties. <br /><br />When we arrive, we will have only a few short hours to evacuate the city's 600 inhabitants before the structure fails entirely and sinks into the crushing gravitational depths of the planet. With the number of beings to be evacuated, our first order of business will be to set up pattern enhancers and then direct the locals to the beam-out sites.
+{% endcapture %}
+{% include captains_log.html %}
+
+Upon beaming to the city, the crew encountered three creatures using their tendrils to attack fleeing civilians. The crew was able to stun them before they did any further harm. A scan of the creatures did not reveal much aside from the fact that there is no record of any species matching them in the Starfleet science database. Captain Ral also successfully treated all the injured civilians while the rest of the crew set up the pattern enhancers.
+
+The crew began the evacuation to great effect; Science Officer Ma'a'yan and Chief Engineer Hagen worked together to optimize the pattern enhancers for the biosignatures of the crowd as well as improving their operational efficiency. The captain used the city's manifest to establish an evacuation plan to efficiently ensure all beings are accounted for while Chief of Security Cohnson used his familiarity with Klingon culture to convince a group of them to proceed to the evacuation rather than look for something to fight. In the first hour, the crew successfully evacuated half the 600 civilians from the city.
