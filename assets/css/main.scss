@@ -2,6 +2,7 @@
 sitemap: false
 ---
 
+// tweaks to lcars theme
 h1{
   a{
     text-decoration: none;
@@ -20,5 +21,91 @@ h1{
   }
   .line {
     width: 6%;
+  }
+}
+
+.lcars-list {
+  margin-top: 0px;
+  margin-left: 1.25rem;
+
+  li {
+    padding-left: 1.25rem;
+  }
+
+  li::before {
+    width: 15px;
+    height: 20px;
+    border-radius: 10px 0 0 10px;
+  }
+}
+
+.col > *:first-child {
+  &.lcars-text-bar{
+    margin-top: 20px; 
+  }
+}
+
+.lcars-text-bar{
+  margin-bottom: 30px;
+}
+
+strong{
+  color: #ffaa00;
+}
+
+
+// custom stuff
+
+.stats-container{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.stat-box{
+  flex: 0 0 auto;
+  width: 30%;
+  display: flex;
+  height: 40px;
+  margin: 7px;
+
+  &.green div{
+    background-color: #999933;
+  }
+
+  &.tomato div{
+    background-color: #ff5555;
+  }
+
+  &.almond div{
+    background-color: #ffaa90;
+  }
+
+  &.bluey div{
+    background-color: #8899ff;
+  }
+
+  div{
+    color: #000;
+    display: inline-block;
+    overflow: hidden;
+    padding: 3px 5px;
+    text-overflow: ellipsis;
+    text-transform: uppercase;
+  }
+
+  .stat-name{
+    flex-grow: 1;
+    flex-shrink: 1;
+    margin: 0 5px 0 0;
+    border-radius: 20px 0 0 20px;
+    text-align: right;
+  }
+
+  .stat-value{
+    border-radius: 0 20px 20px 0;
+    flex-grow: 0;
+    flex-shrink: 0;
+    text-align: center;
+    width: 40px;
   }
 }

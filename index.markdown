@@ -1,5 +1,5 @@
 ---
-
+title: LCARS Database
 ---
 # USS Hanesawa Computer Library
 

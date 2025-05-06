@@ -1,13 +1,13 @@
+{% capture namerank %}
+{{ page.rank }} {{ page.full_name }}
+{% endcapture %}
+
 <!DOCTYPE html>
 <html>
 <head>
   <title>
-    {% if page.title != site.title %}
-      {{ page.title }} &#11825; 
-    {% endif %}
-    {% if page.pagination_info.curr_page and page.pagination_info.curr_page > 1 %}
-      page {{ page.pagination_info.curr_page }} &#11825; 
-    {% endif %}
+    {{ namerank }} &#11825
+    Personnel &#11825
     {{ site.title }}
   </title>
   
@@ -112,16 +112,142 @@
           </div>
           <main>
 
-            <h1><a href="{{ site.url }}{{ page.url }}" rel="bookmark" title="{{ page.title }}">{{ page.title }}</a></h1>
+            <h1><a href="{{ site.url }}{{ page.url }}" rel="bookmark" title="{{ page.title }}">{{ namerank }}</a></h1>
 
-            {% assign category = page.categories[0] %}
-            {% if category == "mission" %}
-              <div class="lcars-text-bar">
-                <span>Mission report</span>
+
+            {% if page.image %}
+              <div class="pics-right">
+                <img {% twoxify page.image %} />
               </div>
-            {% endif %}
+              {% endif %}
+              <h2>Personnel File</h2>
 
-            {{ content }}
+              <div class="lcars-text-bar">
+                <span>Background</span>
+              </div>
+              <ul class="lcars-list">
+                <li><strong>Species</strong>: {{ page.species.name }}</li>
+                <li><strong>Pronouns</strong>: {{ page.pronouns }}</li>
+                <li><strong>Upbringing</strong>: {{ page.upbringing }}</li>
+                <li><strong>Environment</strong>: {{ page.environment }}</li>
+                <li><strong>Pastimes</strong>: {{ page.pastimes }}</li>
+                <li><strong>Roles</strong>: 
+                  <ul class="lcars-list">
+                    {% for role in page.roles %}
+                      <li><strong>{{ role.name }}</strong>: {{ role.detail }}</li>
+                    {% endfor %}
+                  </ul>
+                </li>
+              </ul>
+
+              <div class="lcars-text-bar">
+                <span>Career</span>
+              </div>
+              <div class="flexbox">
+                <div class="col">
+                  {{ page.career.path }}
+                  <div class="stats-container">
+                    {% for attr in page.career.stats %}
+                    <div class="stat-box tomato">
+                      <div class="stat-name">{{ attr[0] }}</div>
+                      <div class="stat-value">{{ attr[1] }}</div>
+                    </div>
+                    {% endfor %}
+                  </div>
+                </div>
+                <div class="col">
+                  <ul class="lcars-list">
+                  {% for evt in page.career.events %}
+                    <li>{{ evt }}</li>
+                  {% endfor %}
+                  </ul>
+                </div>
+              </div>
+
+              <div class="flexbox">
+                <div class="col">
+                  <div class="lcars-text-bar">
+                    <span>Attributes</span>
+                  </div>
+                  <div class="stats-container">
+                    {% for attr in page.stats.attributes %}
+                    <div class="stat-box almond">
+                      <div class="stat-name">{{ attr[0] }}</div>
+                      <div class="stat-value">{{ attr[1] }}</div>
+                    </div>
+                    {% endfor %}
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="lcars-text-bar">
+                    <span>Departments</span>
+                  </div>
+                  <div class="stats-container">
+                    {% for attr in page.stats.departments %}
+                    <div class="stat-box bluey">
+                      <div class="stat-name">{{ attr[0] }}</div>
+                      <div class="stat-value">{{ attr[1] }}</div>
+                    </div>
+                    {% endfor %}
+                  </div>
+                </div>
+              </div>
+
+              <div class="flexbox">
+                <div class="col">
+                  <div class="lcars-text-bar">
+                    <span>Health</span>
+                  </div>
+                  <div class="stats-container">
+                    <div class="stat-box green">
+                      <div class="stat-name">Protection</div>
+                      <div class="stat-value">{{ page.protection }}</div>
+                    </div>
+                    <div class="stat-box green">
+                      <div class="stat-name">Stress</div>
+                      <div class="stat-value">{{ page.stress }}</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="lcars-text-bar">
+                    <span>Species Ability</span>
+                  </div>
+                  <strong>{{ page.species.ability.name }}</strong>: {{ page.species.ability.detail }}
+                </div>
+              </div>
+
+              <div class="flexbox">
+                <div class="col">
+                  <div class="lcars-text-bar">
+                    <span>Values</span>
+                  </div>
+                  <ul class="lcars-list">
+                    {% for value in page.values %}
+                      <li>{{ value }}</li>
+                    {% endfor %}
+                  </ul>
+                </div>
+                <div class="col">
+                  <div class="lcars-text-bar">
+                    <span>Focuses</span>
+                  </div>
+                  <ul class="lcars-list">
+                    {% for focus in page.focuses %}
+                      <li>{{ focus }}</li>
+                    {% endfor %}
+                  </ul>
+                </div>
+              </div>
+
+              <div class="lcars-text-bar">
+                <span>Talents</span>
+              </div>
+              <ul class="lcars-list">
+                {% for talent in page.talents %}
+                  <li><strong>{{ talent.name }}</strong>: {{ talent.detail }}</li>
+                {% endfor %}
+              </ul>
 
             {% include footer.html %}
           </main>
