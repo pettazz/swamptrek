@@ -8,9 +8,9 @@ roles:
   - name: Science Officer
     detail: >
       When you succeed at a task assisted by the ship’s Sensors or Computers, or a task using a tricorder or other sensing device, you may ask one additional question as if you had spent Momentum on Obtain Information.
-  - name: Chief Medical Officer
+  - name: Ship's Doctor
     detail: >
-      You reduce the opportunity cost of medical equipment and medical teams by 1, to a minimum of 0. Further, when you attempt a task using your Medicine rating, and you have assistance, you generate 1 bonus Momentum (bonus Momentum may not be saved).
+      You have two additional focuses, which must relate to medicine fields of study. However, your ship cannot use Crew Support to introduce supporting characters who are medical personnel.
 species: 
   name: Vulcan
   ability:
