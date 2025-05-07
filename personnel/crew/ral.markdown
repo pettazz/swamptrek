@@ -8,6 +8,9 @@ roles:
   - name: Commanding Officer
     detail: > 
       You may spend Determination to grant any other character you can communicate with 1 Determination; this does not have to be linked to using or challenging a value.
+  - name: Not Executive Officer
+    detail: > 
+      When an allied character in communication with you spends Determination, you may spend 3 Momentum (Immediate) to enable that character to regain the spent point of Determination.
 species: 
   name: Trill
   ability:
