@@ -1,9 +1,13 @@
 ---
 layout: character
+pc: true
+crew: true
 
 full_name: Yeldrin Ral
+alignment: Starfleet
 rank: Captain
 pronouns: he/him
+assignment: USS Hanesawa
 roles: 
   - name: Commanding Officer
     detail: > 

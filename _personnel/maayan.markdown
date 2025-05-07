@@ -1,9 +1,13 @@
 ---
 layout: character
+pc: true
+crew: true
 
 full_name: Ma'a'yan
+alignment: Starfleet
 rank: Lieutenant
 pronouns: she/her
+assignment: USS Hanesawa
 roles: 
   - name: Science Officer
     detail: >

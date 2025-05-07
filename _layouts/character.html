@@ -1,91 +1,23 @@
-{% capture namerank %}
-{{ page.rank }} {{ page.full_name }}
-{% endcapture %}
-
 <!DOCTYPE html>
 <html>
 <head>
+  {% capture namerank %}
+  {{ page.rank }} {{ page.full_name }}
+  {% endcapture %}
+
   <title>
     {{ namerank }} &#11825
     Personnel &#11825
     {{ site.title }}
   </title>
   
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
-  <meta name="format-detection" content="telephone=no">
-  <meta name="format-detection" content="date=no">
-  <link rel="stylesheet" type="text/css" href="/assets/css/external/lcars.css">
-  <link rel="stylesheet" type="text/css" href="/assets/css/main.css?cb={{ 'now' | date: "%s" }}">
+  {% include head.html %}
 </head>
 <body>
   <div class="wrap-everything">
-    <section id="column-1">
-      {% include throbber.html %}
-      <div class="pillbox">
-        <div class="pill"><a href="">J-001</a></div>
-        <div class="pill"><a href="">R-002</a></div>
-        <div class="pill"><a href="">R-003</a></div>
-        <div class="pill"><a href="">I-004</a></div>
-        <div class="pill"><a href="">C-005</a></div>
-        <div class="pill"><a href="">A-006</a></div>
-      </div>
-      <div class="lcars-list-2 uppercase">
-        <ul>
-          <li>Subspace Link: Established</li>
-          <li>Starfleet Database: Connected</li>
-          <li>Quantum Memory Field: stable</li>
-          <li class="bullet-almond-creme font-almond-creme">Optical Data Network: rerouting</li>
-        </ul>
-      </div>
-      <div class="pillbox">
-        <div class="pill-a"><a href="">F12-22</a></div>
-        <div class="pill-a"><a href="">G24-22</a></div>
-        <div class="pill-a"></div>
-        <div class="pill-a"><a href="">H-07AM</a></div>
-        <div class="pill-a"><a href="">I50-72</a></div>
-        <div class="pill-a"><a href="">J5369</a></div>
-      </div>
-    </section>
-    <section id="column-2">
-      <div class="panel-11"> 11-1524 </div>
-      <div class="section-2-buttons">
-        <a href="">JS2B-01</a> 
-        <a href="">IS2B-02</a> 
-        <a href="">MS2B-03</a> 
-      </div>
-      <div class="panel-12"> 12-0730</div>
-      <div class="panel-13">13-318</div>
-      <div class="panel-14">14-DL44</div>
-      <div class="panel-15">15-3504</div>
-    </section>
+    {% include sidestuff.html %}
     <section id="column-3">
-      <div class="wrap">
-        <div class="left-frame-top">
-          <div class="panel-1"><a href="">LCARS</a></div>
-          <div class="panel-2">02<span class="hop">-262000</span></div>
-        </div>
-        <div class="right-frame-top">
-          <div class="banner"> USS Hanesawa &#149; 47988 </div>
-          <div class="data-cascade-button-group">
-            <div class="cascade-wrapper">
-              <div class="data-cascade" id="default">               
-                <div class="row-1"> <div class="dc1">101</div> <div class="dc202">7109</div> <div class="dc303">1966</div> <div class="dc4">36</div> <div class="dc5">880</div> <div class="dc66">204</div> <div class="dc7">1954</div> <div class="dc88">11.3</div> <div class="dc9">6.8</div> <div class="dc10">241</div> <div class="dc110">309</div> <div class="dc12">7.08</div> <div class="dc13">9.9</div> <div class="dc140">12.20</div> <div class="dc15">53</div> <div class="dc15">1961</div> <div class="dc15">2.16</div> <div class="dc900">1725</div> <div class="dc900">631</div> <div class="dc900">484</div> <div class="dc901">30</div> <div class="dc901">7952</div> <div class="dc901">97</div> </div> <div class="row-2"> <div class="dc1">102</div> <div class="dc202">8102</div> <div class="dc303">1987</div> <div class="dc4">044</div> <div class="dc5">0051</div> <div class="dc66">1968</div> <div class="dc7">704</div> <div class="dc88">1031</div> <div class="dc9">56</div> <div class="dc10">1954</div> <div class="dc110">764</div> <div class="dc12">1940</div> <div class="dc13">1935</div> <div class="dc140">1972</div> <div class="dc15">815</div> <div class="dc15">4.12</div> <div class="dc15">2023</div> <div class="dc900">76</div> <div class="dc900">957</div> <div class="dc900">9381</div> <div class="dc901">864</div> <div class="dc901">126</div> <div class="dc901">1008</div> </div> <div class="row-3"> <div class="dc1">103</div> <div class="dc202">714</div> <div class="dc303">1993</div> <div class="dc4">954</div> <div class="dc5">4.4</div> <div class="dc66">1969</div> <div class="dc7">68</div> <div class="dc88">91</div> <div class="dc9">1984</div> <div class="dc10">21</div> <div class="dc110">716</div> <div class="dc12">801</div> <div class="dc13">417</div> <div class="dc140">602</div> <div class="dc15">5618</div> <div class="dc15">238</div> <div class="dc15">1443</div> <div class="dc900">908</div> <div class="dc900">07</div> <div class="dc900">066</div> <div class="dc901">44</div> <div class="dc901">128</div> <div class="dc901">2705</div> </div> <div class="row-4"> <div class="dc1">104</div> <div class="dc202">6104</div> <div class="dc303">1995</div> <div class="dc4">3.22</div> <div class="dc5">1931</div> <div class="dc66">0.0</div> <div class="dc7">008</div> <div class="dc88">1701</div> <div class="dc9">184</div> <div class="dc10">218</div> <div class="dc110">908</div> <div class="dc12">10</div> <div class="dc13">85</div> <div class="dc140">1888</div> <div class="dc15">27</div> <div class="dc15">2879</div> <div class="dc15">213</div> <div class="dc900">1057</div> <div class="dc900">117</div> <div class="dc900">2025</div> <div class="dc901">988</div> <div class="dc901">3074</div> <div class="dc901">848</div> </div> <div class="row-5"> <div class="dc1">105</div> <div class="dc202">08</div> <div class="dc303">2001</div> <div class="dc4">713</div> <div class="dc5">079</div> <div class="dc66">1977</div> <div class="dc7">LV</div> <div class="dc88">426</div> <div class="dc9">105</div> <div class="dc10">10</div> <div class="dc110">1642</div> <div class="dc12">1979</div> <div class="dc13">402</div> <div class="dc140">795</div> <div class="dc15">361</div> <div class="dc15">0852</div> <div class="dc15">984</div> <div class="dc900">1058</div> <div class="dc900">007</div> <div class="dc900">1989</div> <div class="dc901">73</div> <div class="dc901">0484</div> <div class="dc901">261</div> </div> <div class="row-6"> <div class="dc1">106</div> <div class="dc202">31</div> <div class="dc303">2017</div> <div class="dc4">429</div> <div class="dc5">65</div> <div class="dc66">871</div> <div class="dc7">24</div> <div class="dc88">541</div> <div class="dc9">656</div> <div class="dc10">M</div> <div class="dc110">113</div> <div class="dc12">12.6</div> <div class="dc13">27</div> <div class="dc140">05</div> <div class="dc15">85</div> <div class="dc15">12.25</div> <div class="dc15">7884</div> <div class="dc900">8807</div> <div class="dc900">23</div> <div class="dc900">250</div> <div class="dc901">1047</div> <div class="dc901">322</div> <div class="dc901">88</div> </div> <div class="row-7"> <div class="dc1">107</div> <div class="dc202">5</div> <div class="dc303">2022</div> <div class="dc4">784</div> <div class="dc5">3304</div> <div class="dc66">42</div> <div class="dc7">733</div> <div class="dc88">1224</div> <div class="dc9">5801</div> <div class="dc10">23</div> <div class="dc110">1015</div> <div class="dc12">84</div> <div class="dc13">36</div> <div class="dc140">029</div> <div class="dc15">24</div> <div class="dc15">318</div> <div class="dc15">12.24</div> <div class="dc900">27</div> <div class="dc900">1905</div> <div class="dc900">809</div> <div class="dc901">711</div> <div class="dc901">2305</div> <div class="dc901">324</div> </div> <div class="row-8"> <div class="dc1">108</div> <div class="dc202">23</div> <div class="dc303">174</div> <div class="dc4">91</div> <div class="dc5">947</div> <div class="dc66">28</div> <div class="dc7">527</div> <div class="dc88">04</div> <div class="dc9">469</div> <div class="dc10">22</div> <div class="dc110">88</div> <div class="dc12">1985</div> <div class="dc13">540</div> <div class="dc140">3121</div> <div class="dc15">308</div> <div class="dc15">9571</div> <div class="dc15">404</div> <div class="dc900">1994</div> <div class="dc900">55</div> <div class="dc900">1995</div> <div class="dc901">9777</div> <div class="dc901">476</div> <div class="dc901">2805</div> </div>
-              </div>
-            </div>
-            <nav> 
-              {% include nav.html %}
-            </nav>
-          </div>
-          <div class="bar-panel first-bar-panel">
-            <div class="bar-1"></div>
-            <div class="bar-2"></div>
-            <div class="bar-3"></div>
-            <div class="bar-4"></div>
-            <div class="bar-5"></div>
-          </div>
-        </div>
-      </div>
+      {% include upperstuff.html %}
       <div class="wrap" id="gap">
         <div class="left-frame">
           <button onclick="topFunction()" id="topBtn"><span class="hop">screen</span> top</button>
@@ -117,7 +49,7 @@
 
             {% if page.image %}
               <div class="pics-right">
-                <img {% twoxify page.image %} />
+                <img {% twoxify page.image %} width="500" />
               </div>
               {% endif %}
               <h2>Personnel File</h2>
@@ -126,128 +58,168 @@
                 <span>Background</span>
               </div>
               <ul class="lcars-list">
-                <li><strong>Species</strong>: {{ page.species.name }}</li>
+                {% if page.species %}
+                  <li><strong>Species</strong>: {{ page.species.name }}</li>
+                {% endif %}
                 <li><strong>Pronouns</strong>: {{ page.pronouns }}</li>
-                <li><strong>Upbringing</strong>: {{ page.upbringing }}</li>
-                <li><strong>Environment</strong>: {{ page.environment }}</li>
-                <li><strong>Pastimes</strong>: {{ page.pastimes }}</li>
-                <li><strong>Roles</strong>: 
-                  <ul class="lcars-list">
-                    {% for role in page.roles %}
-                      <li><strong>{{ role.name }}</strong>: {{ role.detail }}</li>
-                    {% endfor %}
-                  </ul>
-                </li>
+                <li><strong>Alignment</strong>: {{ page.alignment }}</li>
+                {% if page.upbringing %}
+                  <li><strong>Upbringing</strong>: {{ page.upbringing }}</li>
+                {% endif %}
+                {% if page.environment %}
+                  <li><strong>Environment</strong>: {{ page.environment }}</li>
+                {% endif %}
+                {% if page.pastimes %}
+                  <li><strong>Pastimes</strong>: {{ page.pastimes }}</li>
+                {% endif %}
+                {% if page.assignment %}
+                  <li><strong>Assignment</strong>: {{ page.assignment }}</li>
+                {% endif %}
+                {% if page.roles %}
+                  <li><strong>Roles</strong>: 
+                    <ul class="lcars-list">
+                      {% for role in page.roles %}
+                        <li><strong>{{ role.name }}</strong>: {{ role.detail }}</li>
+                      {% endfor %}
+                    </ul>
+                  </li>
+                {% endif %}
               </ul>
 
-              <div class="lcars-text-bar">
-                <span>Career</span>
-              </div>
-              <div class="flexbox">
-                <div class="col">
-                  {{ page.career.path }}
-                  <div class="stats-container">
-                    {% for attr in page.career.stats %}
-                    <div class="stat-box tomato">
-                      <div class="stat-name">{{ attr[0] }}</div>
-                      <div class="stat-value">{{ attr[1] }}</div>
+              {% if page.career %}
+                <div class="lcars-text-bar">
+                  <span>Career</span>
+                </div>
+                <div class="flexbox">
+                  <div class="col">
+                    {{ page.career.path }}
+                    <div class="stats-container">
+                      {% for attr in page.career.stats %}
+                      <div class="stat-box tomato">
+                        <div class="stat-name">{{ attr[0] }}</div>
+                        <div class="stat-value">{{ attr[1] }}</div>
+                      </div>
+                      {% endfor %}
                     </div>
+                  </div>
+                  <div class="col">
+                    <ul class="lcars-list">
+                    {% for evt in page.career.events %}
+                      <li>{{ evt }}</li>
                     {% endfor %}
+                    </ul>
                   </div>
                 </div>
-                <div class="col">
-                  <ul class="lcars-list">
-                  {% for evt in page.career.events %}
-                    <li>{{ evt }}</li>
+              {% endif %}
+
+              {% if page.stats %}
+                <div class="flexbox">
+                  <div class="col">
+                    <div class="lcars-text-bar">
+                      <span>Attributes</span>
+                    </div>
+                    <div class="stats-container">
+                      {% for attr in page.stats.attributes %}
+                      <div class="stat-box almond">
+                        <div class="stat-name">{{ attr[0] }}</div>
+                        <div class="stat-value">{{ attr[1] }}</div>
+                      </div>
+                      {% endfor %}
+                    </div>
+                  </div>
+                  <div class="col">
+                    <div class="lcars-text-bar">
+                      <span>Departments</span>
+                    </div>
+                    <div class="stats-container">
+                      {% for attr in page.stats.departments %}
+                      <div class="stat-box bluey">
+                        <div class="stat-name">{{ attr[0] }}</div>
+                        <div class="stat-value">{{ attr[1] }}</div>
+                      </div>
+                      {% endfor %}
+                    </div>
+                  </div>
+                </div>
+              {% endif %}
+
+
+              <div class="flexbox">
+                {% if page.stress %}
+                  <div class="col">
+                    <div class="lcars-text-bar">
+                      <span>Health</span>
+                    </div>
+                    <div class="stats-container">
+                      <div class="stat-box green">
+                        <div class="stat-name">Protection</div>
+                        <div class="stat-value">{{ page.protection }}</div>
+                      </div>
+                      <div class="stat-box green">
+                        <div class="stat-name">Stress</div>
+                        <div class="stat-value">{{ page.stress }}</div>
+                      </div>
+                    </div>
+                  </div>
+                {% endif %}
+                {% if page.species.ability %}
+                  <div class="col">
+                    <div class="lcars-text-bar">
+                      <span>Species Ability</span>
+                    </div>
+                    <strong>{{ page.species.ability.name }}</strong>: {{ page.species.ability.detail }}
+                  </div>
+                {% endif %}
+              </div>
+
+              <div class="flexbox">
+                {% if page.values %}
+                  <div class="col">
+                    <div class="lcars-text-bar">
+                      <span>Values</span>
+                    </div>
+                    <ul class="lcars-list">
+                      {% for value in page.values %}
+                        <li>{{ value }}</li>
+                      {% endfor %}
+                    </ul>
+                  </div>
+                {% endif %}
+                {% if page.focuses %}
+                  <div class="col">
+                    <div class="lcars-text-bar">
+                      <span>Focuses</span>
+                    </div>
+                    <ul class="lcars-list">
+                      {% for focus in page.focuses %}
+                        <li>{{ focus }}</li>
+                      {% endfor %}
+                    </ul>
+                  </div>
+                {% endif %}
+              </div>
+
+              {% if page.talents %}
+                <div class="lcars-text-bar">
+                  <span>Talents</span>
+                </div>
+                <ul class="lcars-list">
+                  {% for talent in page.talents %}
+                    <li><strong>{{ talent.name }}</strong>: {{ talent.detail }}</li>
                   {% endfor %}
-                  </ul>
-                </div>
-              </div>
+                </ul>
+              {% endif %}
 
-              <div class="flexbox">
-                <div class="col">
-                  <div class="lcars-text-bar">
-                    <span>Attributes</span>
-                  </div>
-                  <div class="stats-container">
-                    {% for attr in page.stats.attributes %}
-                    <div class="stat-box almond">
-                      <div class="stat-name">{{ attr[0] }}</div>
-                      <div class="stat-value">{{ attr[1] }}</div>
-                    </div>
-                    {% endfor %}
-                  </div>
-                </div>
-                <div class="col">
-                  <div class="lcars-text-bar">
-                    <span>Departments</span>
-                  </div>
-                  <div class="stats-container">
-                    {% for attr in page.stats.departments %}
-                    <div class="stat-box bluey">
-                      <div class="stat-name">{{ attr[0] }}</div>
-                      <div class="stat-value">{{ attr[1] }}</div>
-                    </div>
-                    {% endfor %}
-                  </div>
-                </div>
-              </div>
+              {%- capture scontent -%}
+              {{ page.content | strip }}
+              {%- endcapture -%}
 
-              <div class="flexbox">
-                <div class="col">
-                  <div class="lcars-text-bar">
-                    <span>Health</span>
-                  </div>
-                  <div class="stats-container">
-                    <div class="stat-box green">
-                      <div class="stat-name">Protection</div>
-                      <div class="stat-value">{{ page.protection }}</div>
-                    </div>
-                    <div class="stat-box green">
-                      <div class="stat-name">Stress</div>
-                      <div class="stat-value">{{ page.stress }}</div>
-                    </div>
-                  </div>
+              {% unless scontent == "" %}
+                <div class="lcars-text-bar">
+                  <span>Supplementary Details</span>
                 </div>
-                <div class="col">
-                  <div class="lcars-text-bar">
-                    <span>Species Ability</span>
-                  </div>
-                  <strong>{{ page.species.ability.name }}</strong>: {{ page.species.ability.detail }}
-                </div>
-              </div>
-
-              <div class="flexbox">
-                <div class="col">
-                  <div class="lcars-text-bar">
-                    <span>Values</span>
-                  </div>
-                  <ul class="lcars-list">
-                    {% for value in page.values %}
-                      <li>{{ value }}</li>
-                    {% endfor %}
-                  </ul>
-                </div>
-                <div class="col">
-                  <div class="lcars-text-bar">
-                    <span>Focuses</span>
-                  </div>
-                  <ul class="lcars-list">
-                    {% for focus in page.focuses %}
-                      <li>{{ focus }}</li>
-                    {% endfor %}
-                  </ul>
-                </div>
-              </div>
-
-              <div class="lcars-text-bar">
-                <span>Talents</span>
-              </div>
-              <ul class="lcars-list">
-                {% for talent in page.talents %}
-                  <li><strong>{{ talent.name }}</strong>: {{ talent.detail }}</li>
-                {% endfor %}
-              </ul>
+                {{ content }}
+              {% endunless %}
 
             {% include footer.html %}
           </main>

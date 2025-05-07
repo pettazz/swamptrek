@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>
+    {{ page.ship_name }} &#11825
+    Starship Registry &#11825
+    {{ site.title }}
+  </title>
+  
+  {% include head.html %}
+</head>
+<body>
+  <div class="wrap-everything">
+    {% include sidestuff.html %}
+    <section id="column-3">
+      {% include upperstuff.html %}
+      <div class="wrap" id="gap">
+        <div class="left-frame">
+          <button onclick="topFunction()" id="topBtn"><span class="hop">screen</span> top</button>
+          <div>
+            <div class="panel-3">03<span class="hop">-111968</span></div>
+            <div class="panel-4">04<span class="hop">-041969</span></div>
+            <div class="panel-5">05<span class="hop">-1701D</span></div>
+            <div class="panel-6">06<span class="hop">-071984</span></div>
+            <div class="panel-7">07<span class="hop">-081940</span></div>
+            <div class="panel-8">08<span class="hop">-47148</span></div>
+            <div class="panel-9">09<span class="hop">-081966</span></div>
+          </div>
+          <div>
+            <div class="panel-10">10<span class="hop">-31</span></div>
+          </div>
+        </div>
+        <div class="right-frame">
+          <div class="bar-panel">
+            <div class="bar-6"></div>
+            <div class="bar-7"></div>
+            <div class="bar-8"></div>
+            <div class="bar-9"></div>
+            <div class="bar-10"></div>
+          </div>
+          <main>
+
+            <h1><a href="{{ site.url }}{{ page.url }}" rel="bookmark" title="{{ page.title }}">{{ page.ship_name }}</a></h1>
+            <h2 class="go-right">{{ page.registry }}</h2>
+
+            {% if page.image %}
+              <div class="pics-right">
+                <img {% twoxify page.image %} width="500" />
+              </div>
+              {% endif %}
+
+              <div class="lcars-text-bar">
+                <span>Service Record</span>
+              </div>
+              <ul class="lcars-list">
+                <li><strong>Class</strong>: {{ page.class }}</li>
+                {% if page.mission_profile %}
+                <li><strong>Mission Profile</strong>: {{ page.mission_profile }}</li>
+                {% endif %}
+                {% if page.launch_year %}
+                <li><strong>Launch Year</strong>: {{ page.launch_year }}</li>
+                {% endif %}
+                {% if page.commission_year %}
+                <li><strong>Current Commmision Year</strong>: {{ page.commission_year }}</li>
+                {% endif %}
+                {% if page.refits %}
+                <li><strong>Refits</strong>: {{ page.refits }}</li>
+                {% endif %}
+
+                {% if page.service_record %}
+                <li><strong>{{ page.service_record.name }}</strong>: {{ page.service_record.detail}}
+                  <ul class="lcars-list">
+                    <li><strong>{{ page.service_record.trait.name }}</strong>: {{ page.service_record.trait.detail }}</li>
+                  </ul>
+                </li>
+                {% endif %}
+              </ul>
+
+              <div class="flexbox">
+                <div class="col">
+                  <div class="lcars-text-bar">
+                    <span>Systems</span>
+                  </div>
+                  <div class="stats-container">
+                    {% for attr in page.stats.systems %}
+                    <div class="stat-box almond">
+                      <div class="stat-name">{{ attr[0] }}</div>
+                      <div class="stat-value">{{ attr[1] }}</div>
+                    </div>
+                    {% endfor %}
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="lcars-text-bar">
+                    <span>Departments</span>
+                  </div>
+                  <div class="stats-container">
+                    {% for attr in page.stats.departments %}
+                    <div class="stat-box bluey">
+                      <div class="stat-name">{{ attr[0] }}</div>
+                      <div class="stat-value">{{ attr[1] }}</div>
+                    </div>
+                    {% endfor %}
+                  </div>
+                </div>
+              </div>
+
+              <div class="flexbox">
+                <div class="col">
+                  <div class="lcars-text-bar">
+                    <span>Defense</span>
+                  </div>
+                  <div class="stats-container">
+                    <div class="stat-box green">
+                      <div class="stat-name">Shields</div>
+                      <div class="stat-value">{{ page.shields }}</div>
+                    </div>
+                    <div class="stat-box green">
+                      <div class="stat-name">Resistance</div>
+                      <div class="stat-value">{{ page.resistance }}</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="lcars-text-bar">
+                    <span>Dimensions</span>
+                  </div>
+                  <div class="stats-container">
+                    <div class="stat-box sunflower">
+                      <div class="stat-name">Scale</div>
+                      <div class="stat-value">{{ page.scale }}</div>
+                    </div>
+                    {% if page.crew_support %}
+                    <div class="stat-box sunflower">
+                      <div class="stat-name">Crew</div>
+                      <div class="stat-value">{{ page.crew_support }}</div>
+                    </div>
+                    {% endif %}
+                  </div>
+                </div>
+              </div>
+
+              {% if page.talents %}
+              <div class="lcars-text-bar">
+                <span>Talents</span>
+              </div>
+              <ul class="lcars-list">
+                {% for talent in page.talents %}
+                  <li><strong>{{ talent.name }}</strong>: {{ talent.detail }}</li>
+                {% endfor %}
+              </ul>
+              {% endif %}
+
+              <div class="lcars-text-bar">
+                <span>Attacks</span>
+              </div>
+              {% for attack in page.attacks %}
+                <div class="bars-container">
+                  <div class="bar-box tomato">
+                    <div class="bar-name">Name</div>
+                    <div class="bar-value">{{ attack.name }}</div>
+                  </div>
+                  <div class="bar-box tomato">
+                    <div class="bar-name">Type</div>
+                    <div class="bar-value">{{ attack.type }}</div>
+                  </div>
+                  <div class="bar-box tomato">
+                    <div class="bar-name">Range</div>
+                    <div class="bar-value">{{ attack.range }}</div>
+                  </div>
+                  <div class="bar-box tomato">
+                    <div class="bar-name">Damage</div>
+                    <div class="bar-value">{{ attack.damage }}</div>
+                  </div>
+                  <div class="bar-box full-width tomato">
+                    <div class="bar-name">Qualities</div>
+                    <div class="bar-value">{{ attack.qualities | join: ", " }}</div>
+                  </div>
+                </div>
+              {% endfor %}
+
+              {%- capture scontent -%}
+              {{ page.content | strip }}
+              {%- endcapture -%}
+
+              {% unless scontent == "" %}
+                <div class="lcars-text-bar">
+                  <span>Supplementary Details</span>
+                </div>
+                {{ content }}
+              {% endunless %}
+
+            {% include footer.html %}
+          </main>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script type="text/javascript" src="/assets/js/lcars.js"></script>
+  <div class="headtrim"> </div>
+  <div class="baseboard"> </div>
+</body>
+</html>

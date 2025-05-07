@@ -1,9 +1,13 @@
 ---
 layout: character
+pc: true
+crew: true
 
 full_name: Jave Cohnson
+alignment: Starfleet
 rank: Lt. Commander
 pronouns: he/him
+assignment: USS Hanesawa
 roles: 
   - name: Chief of Security
     detail: >
