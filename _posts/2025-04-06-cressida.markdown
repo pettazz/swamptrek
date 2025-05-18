@@ -1,5 +1,5 @@
 ---
-title: "Crisis on Cressida"
+title: "Crisis on Cressida, Part 1"
 categories: mission
 stardate: 48398.9
 date: 2025-04-06 15:30:00

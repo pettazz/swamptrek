@@ -5,9 +5,9 @@ stardate: 48315.6
 date: 2025-04-06 14:30:00
 ---
 
-At Starfleet Headquartes in San Francisco, Earth, eight new captains were summoned to receive their new commissions, one of whom was Captain Yeldrin Ral. He encountered another captain, Zinet, who he did not recognize from the academy and rambled on nervously about ship classes and not being able to access the report on the USS Merrimack. Admiral Dougherty arrived to provide the captains with their postings and crew assignments, all to Excelsior class ships which he called "the backbone of the fleet."
+At Starfleet Headquartes in San Francisco, Earth, eight new captains were summoned to receive their new commissions, one of whom was Captain Yeldrin Ral. He encountered another captain, [Zinet](/personnel/zinet), who he did not recognize from the academy and rambled on nervously about ship classes and not being able to access the report on the USS Merrimack. [Admiral Dougherty](/personnel/dougherty/) arrived to provide the captains with their postings and crew assignments, all to Excelsior class ships which he called "the backbone of the fleet."
 
-Captain Ral is given command of the USS Hanesawa, on its eighth refit and with a crew of 400. Senior staff are:
+Captain Ral is given command of the *USS Hanesawa*, on its eighth refit and with a crew of 400. Senior staff are:
 
 - Chief Engineer/Operations Manager: Lt. Ania Hagen
 - Chief of Security/Chief Tactical Officer: Lt. Jave Cohnson
