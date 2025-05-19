@@ -125,6 +125,7 @@ strong{
 .bar-box{
   flex: 0 0 auto;
   width: 40%;
+  min-width: 300px;
   display: flex;
   height: 40px;
   margin: 7px;
