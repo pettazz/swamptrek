@@ -46,7 +46,7 @@ h1{
 }
 
 .lcars-text-bar{
-  margin-bottom: 30px;
+  // margin-bottom: 30px;
 }
 
 strong{
@@ -55,6 +55,10 @@ strong{
 
 
 // custom stuff
+
+img.character-portrait{
+  max-width: 500px;
+}
 
 .stats-container{
   display: flex;
