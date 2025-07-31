@@ -63,7 +63,7 @@ focuses:
 
 values:
   - Seeking to find myself far from home
-  - Mission Comes First
+  - Mission comes before anything else, no matter the cost
   - Starfleet protocol
   - A good mystery is irresistible
 
