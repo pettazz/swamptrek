@@ -13,4 +13,4 @@ species:
   name: Human
 ---
 
-Ensign Deadman was a crewman on the *Hanesawa* during the [Crisis on Cressida](/mission/cressida3/) who piloted the evacuation shuttle hijacked by Klingons. 
+Ensign Deadman was a crewman on the *Hanesawa* during the [Crisis on Cressida](/mission/cressida3/) who piloted the evacuation shuttle hijacked by Klingons. He was [freed from his restraints](/mission/cressida4/) and then safely piloted the shuttle back to the ship. 
