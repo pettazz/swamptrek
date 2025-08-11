@@ -5,6 +5,9 @@ stardate: 48398.9
 date: 2025-08-10 11:30:00
 ---
 
+This mission sponsored by
+<img {% twoxify "/assets/img/kittylitter@2x.jpg" %} />
+
 {% capture captains_log_body %}
   Supplemental: Time is running short. With only an hour left before the city fails completely, we must focus our efforts as diligently as possible. A group of Klingons has set our efforts back, though only trivially, as they engage in a suicide mission on the planet below. The evacuation will continue apace as an away team travels to the planet in a commandeered shuttle to attempt rescue of our personnel and prevent any further cultural contamination.
 {% endcapture %}
