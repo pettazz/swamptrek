@@ -1,0 +1,27 @@
+---
+title: "A Nest in the Dark, Part 2"
+categories: mission
+stardate: 48423.1
+date: 2025-12-28 14:00:00
+---
+
+{% capture captains_log_body %}
+Supplemental: Our discovery of the alien megastructure, which seems to be a thing only ever theorized before today, will undoubtedly send ripples through the Federation *if* we are able to escape its massive subspace field. It is responding to our presence but with neither overt communication nor obvious hostility. We are on approach to what appears to be a perfect reconstruction of our ship; perhaps this is their attempt at first contact.
+{% endcapture %}
+{% include captains_log.html %}
+
+The massive subspace cloud continued on its path towards the Foggy Bottom system as, deep within, the crew of the *[Hanesawa](/ships/hanesawa)* prepared an away team to board the strange facsimilie of their ship that formed nearby from a few of the countless plates orbiting the center of the mass. Lieutenants [Hagen](/personnel/hagen/), [Ma'a'yan](/personnel/maayan/), and [Cohnson](/personnel/cohnson/) were accompanied by [Ensign Deadman](/personnel/deadman/) in beaming aboard the duplicate ship.
+
+Despite targeting coordinates that would have matched the bridge on their own ship, the away team materializes in what appears to be main engineering. It is a fairly accurate representation, dimly lit by the glow of the warp core. The section was entirely monochrome and made of overlapping panels of mirror and black, while the gravity was about half that of Starfleet standard. Scans revealed that the reason for the low gravity was due to a lack of gravitons under the deck "plates"; the panels were attempting to generate them on the fly but only able to sustain this level. Deeper scans of the panels themselves showed that each plate seemed to be densely packed with carbon nanotube data storage and what appeared to be highly advanced positronic neural networks that run between the storage and a subspace transceiver. What was clear is that each plate could hold the contents of Memory Alpha thousands of times over, and that they were operating in tight unison.
+
+The engineering consoles were all dark except for one which was flashing a single icon at an irregular interval. After careful observation the crew realized that it was a series of numbered pulses separated by pauses, a series of numbers that was being repeated: 3, 5, 8, 13, 21. Together, the away team understood this to be the Fibonacci Sequence; the next number of which is the sum of the previous two. Lt. Hagen used her tricorder light to flash 34 times, and the console beeped approvingly before going dark.
+
+The quiet was suddenly broken by a loud electrical ‘snap’ and a horn bleating with a sound similar to a honking elephant from Earth. Another console lit up with strange symbols and text just as a ‘popping’ sound emanated from around Ensign Deadman. He was surrounded with an amber hued bubble that cut him off from the rest of the crew, as well as the breathable atmosphere.
+
+Newly intense subspace interference prevented the *Hanesawa* from getting a transporter lock on any of the away team. They worked quickly to determine that the bubble had materialized in place via a replicator-like technology and was made of a transparent titanium/cobalt alloy acting as a room temperature superconductor, which would disperse any energy from a hand phaser directed at it. It was also airtight, preventing sound from penetrating as Ensign Deadman pounded his fists against it, and the crew estimated he had about ten minutes of oxygen remaining. 
+
+It was clear to the crew that the intent of whatever intelligence was at work here was for them to solve the puzzle appearing on the console under the extreme duress of the alarms and peril of their crewman. Working with cultural studies expert [Captain Ral](/personnel/ral/) still on the bridge of the *Hanesawa*, the crew was able to discover a basic translation for the unknown symbols as a language and apply it to the puzzle. As they progressed, circumstances became more and more challenging as the gravity suddenly cut out entirely and the comms channel lost its video connection. With seconds to spare, they successfully entered the solution to the logic puzzle into the console. The bubble disappeared in an amber-colored flash of light, the alarms went silent, low gravity was restored, and the console went dark once again. 
+
+As Ensign Deadman gulped mouthfuls of fresh air, a bright light emanated from the replica of the warp core. It focused on a point five meters away and began to strobe as it seemingly printed a shape into the air itself. The form became humanoid as a smell reminiscent of the sterility of sickbay emanated from the being taking shape, layer upon layer. Finally, the light snapped off, leaving a two and a half meter tall humanoid standing before the away team, pale, naked, sexless, and nearly featureless except for two expressive human-like blue eyes and a well-formed mouth. It raised its four-fingered hand in greeting and spoke in Federation Standard, "I have prepared for this moment. It is good that my preparations were not in vain. You are explorers, yes? We are as well. You may refer to me as..." The being quickly spoke a series of words in an attempt to describe itself, and the name [Mercury](/personnel/mercury) issued forth from the universal translator.
+
+Mercury continued, "You are now welcome here for a time, but that time is short."
