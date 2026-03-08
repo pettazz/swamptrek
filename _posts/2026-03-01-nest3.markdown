@@ -1,0 +1,23 @@
+---
+title: "A Nest in the Dark, Part 3"
+categories: mission
+stardate: 48423.1
+date: 2026-03-01 14:15:00
+---
+
+*[Matryoshka Brain]: A massive computer system powered by harnessing the entire energy output of a star, similar to a Dyson Sphere; thought to be only theoretical.
+
+{% capture captains_log_body %}
+Supplemental: The away team's presence on the Hanesawa’s doppelgänger seemed to trigger a security response, but the quick thinking of our crew prevented any serious harm. Even more surprising was that when the security system was disarmed, an inhabitant of the Brain appeared in physical form, giving us the rare opportunity to make first contact with a more advanced civilization than our own.
+{% endcapture %}
+{% include captains_log.html %}
+
+Inside the massive subspace cloud constituting the Matryoshka Brain, the away team aboard the *[Hanesawa](/ships/hanesawa)* doppelgänger watched as a being was assembled in front of them and introduced itself as [Mercury](/personnel/mercury) a representative of the sveral quintillion inhabitants of the Brain. They were a race of beings who had, millions of years ago transcended their corporeal forms and uploaded their consciousnesses into the panels filling the cloud. The systems within reach of their evolutionary homeworld had neither resources nor sentient life, so they made the decision to deconstruct their home system and build megastructures like the one the crew now found themselves within, a process which itself took millions of years. The structures set off thousands of years ago on different courses to explore the galaxies they had never been a part of and have not been in contact with each other since.
+
+When the crew asked why the cloud was on a course for the Foggy Peak system, Mercury told them that they need raw materials to construct more plates and to restock their central star with hydrogen. When pressed for more detailed information, Mercury simply repeated the same general explanation. "We had been monitoring the comings and goings of the vessels in the area and understood that the system you refer to as Foggy Peak has now become inhabited by advanced biological lifeforms. We wished to approach slowly so as to monitor communications and gather more information about your Federation. We did not know if your presence would still be there by the time we arrived."
+
+The crew expressed their concern that the harvesting of resources would harm the few million inhabitants of Foggy Peak, but Mercury seemed unworried, waving away the issues the crew raised. "The starship you arrived in has the ability to generate graviton beams, so any debris that may be inadvertently sent towards the inhabited planet could be deflected by starships. Your sensors could easily show any objects that may impact your worlds with ample time to evacuate inhabitants from near the impact sites. Your Federation has the technology to terraform worlds and repair any damage that may occur."
+
+Trying another approach to convey the danger of the situation for the Foggy Peak residents, [Captain Ral](/personnel/ral/) was *determined* to *make something from nothing*, convincing Mercury that the species making up the Federation have a similar shared history to their own, wanting to leave their worlds to join together and explore the galaxy, something that seems to please Mercury as they never had a chance to have such a cooperative experience. However, the crew was unable to find a viable alternative system that could provide the resources Mercury and its people need. Mercury explained that they do not wish to harm any living thing and try to avoid it as much as possible, but they also have a responsibility to provide for the incredible number of lives in the Brain. 
+
+The cloud continues on its course toward the Foggy Peak system...
