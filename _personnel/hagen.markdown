@@ -61,10 +61,10 @@ focuses:
   - Transporters and Replicators
 
 values:
-  - Adaptation is survival
-  - Tech is simpler than people
-  - Do better, be better
-  - Crew is my family
+  - title: Adaptation is survival
+  - title: Tech is simpler than people
+  - title: Do better, be better
+  - title: Crew is my family
 
 talents:
   - name: Psychokinesis

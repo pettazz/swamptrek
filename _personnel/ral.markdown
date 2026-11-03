@@ -62,10 +62,14 @@ focuses:
   - Cultural Studies
 
 values:
-  - No voice silenced, no perspective unheard
-  - I can make something from nothing
-  - Crew comes first
-  - Sensors can't tell you everything
+  - title: No voice silenced, no perspective unheard
+  - title: I can make something from nothing
+    uses:
+      - nest3
+  - title: Crew comes first
+    uses:
+      - cressida2
+  - title: Sensors can't tell you everything
 
 talents:
   - name: Joined

@@ -64,10 +64,14 @@ focuses:
   - Veterinary Medicine
 
 values:
-  - Honesty isn't always the best policy
-  - It's ok to rage quit if you're right about it
-  - Everything is figureoutable 
-  - Teamwork makes the dreamwork 
+  - title: Honesty isn't always the best policy
+    uses: 
+      - nest4
+  - title: It's ok to rage quit if you're right about it
+  - title: Everything is figureoutable 
+  - title: Teamwork makes the dreamwork 
+    uses: 
+      - cressida5
 
 talents:
   - name: Nerve Pinch

@@ -183,3 +183,60 @@ img.character-portrait{
     text-align: left;
   }
 }
+
+.segmented-bar{
+  display: inline-flex;
+  align-items: stretch;
+  gap: 5px;
+  height: 40px;
+  margin: 7px;
+  vertical-align: middle;
+
+  &.green{ 
+    color: #999933; 
+  }
+
+  &.tomato{ 
+    color: #ff5555; 
+  }
+  &.almond{ 
+    color: #ffaa90; 
+  }
+  &.bluey{ 
+    color: #8899ff; 
+  }
+  &.sunflower{ 
+    color: #ffcc88; 
+  }
+
+  &::before,
+  &::after{
+    content: "";
+    flex: 0 0 20px;
+    background-color: currentColor;
+  }
+
+  &::before{
+    border-radius: 20px 0 0 20px;
+  }
+
+  &::after{
+    border-radius: 0 20px 20px 0;
+  }
+
+  .segment{
+    box-sizing: border-box;
+    flex: 0 0 1.5em;
+    border: 2px solid currentColor;
+    color: inherit;
+
+    &:focus-visible{
+      outline: 2px solid currentColor;
+      outline-offset: 3px;
+    }
+
+    &.is-filled{
+      background-color: currentColor;
+    }
+  }
+}

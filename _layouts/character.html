@@ -180,7 +180,9 @@
                     </div>
                     <ul class="lcars-list">
                       {% for value in page.values %}
-                        <li>{{ value }}</li>
+                        <li>{{ value.title }} <br />
+                        {% include segmented-bar.html length=3 active=value.uses.size uses=value.uses label="usages" color="sunflower" %}
+                        </li>
                       {% endfor %}
                     </ul>
                   </div>

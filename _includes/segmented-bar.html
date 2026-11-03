@@ -1,0 +1,18 @@
+{% assign length = include.length | default: 10 | plus: 0 | at_least: 1 %}
+{% assign progress_value = include.active | default: 0 | plus: 0 | at_least: 0 | at_most: length %}
+
+<div class="segmented-bar {{ include.color | default: 'green' | escape }}"
+     role="group"
+     aria-label="{{ include.label | default: 'Progress' | escape }}: {{ progress_value }} of {{ length }}">
+  {% for step in (1..length) %}
+    {% assign usage = include.uses[forloop.index0] %}
+    {% if step <= progress_value and usage %}
+      <a class="segment is-filled"
+         href="{{ usage | prepend: '/mission/' | relative_url | escape }}"
+         aria-label="Used in mission {{ usage | escape }}"></a>
+    {% else %}
+      <span class="segment{% if step <= progress_value %} is-filled{% endif %}"
+            aria-hidden="true"></span>
+    {% endif %}
+  {% endfor %}
+</div>

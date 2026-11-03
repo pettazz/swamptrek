@@ -62,10 +62,12 @@ focuses:
   - Flight Control Systems
 
 values:
-  - Seeking to find myself far from home
-  - Mission comes before anything else, no matter the cost
-  - Starfleet protocol
-  - A good mystery is irresistible
+  - title: Seeking to find myself far from home
+  - title: Mission comes before anything else, no matter the cost
+    uses: 
+      - cressida2
+  - title: Starfleet protocol
+  - title: A good mystery is irresistible
 
 talents:
   - name: Extra Effort
